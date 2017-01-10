@@ -20,8 +20,7 @@ namespace ChatProject.Models
 
         public int Sex { get; set; }
 
-
-        public int Test { get; set; }
+        
 
 
 
