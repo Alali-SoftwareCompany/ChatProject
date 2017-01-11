@@ -10,15 +10,15 @@ namespace ChatProject.Models
     public class MyContext : DbContext
     {
 
-        public DbSet<User> User { get; set; }
+        public DbSet<User> Users { get; set; }
 
-        public DbSet<Room> Room { get; set; }
+        public DbSet<Room> Rooms { get; set; }
 
-        public DbSet<PrivateMessage> PrivateMessage { get; set; }
+        public DbSet<PrivateMessage> PrivateMessages { get; set; }
 
-        public DbSet<Message> Message { get; set; }
+        public DbSet<Message> Messages { get; set; }
 
-        public DbSet<LoggedInUser> LoggedInUser { get; set; }
+        public DbSet<LoggedInUser> LoggedInUsers { get; set; }
         
 
 

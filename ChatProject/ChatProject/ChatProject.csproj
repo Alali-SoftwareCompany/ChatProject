@@ -211,14 +211,18 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\LoggedInUser.cs" />
+    <Compile Include="Models\Class\LoggedInUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\Class\Message.cs" />
     <Compile Include="Models\MyContext.cs" />
-    <Compile Include="Models\PrivateMessage.cs" />
-    <Compile Include="Models\Room.cs" />
-    <Compile Include="Models\User.cs" />
-    <Compile Include="Models\UserRepository.cs" />
+    <Compile Include="Models\Class\PrivateMessage.cs" />
+    <Compile Include="Models\Repositories\LoggedInUserRepository.cs" />
+    <Compile Include="Models\Repositories\MessageRepository.cs" />
+    <Compile Include="Models\Repositories\PrivateMessageRepository.cs" />
+    <Compile Include="Models\Repositories\RoomRepository.cs" />
+    <Compile Include="Models\Repositories\UserRepository.cs" />
+    <Compile Include="Models\Class\Room.cs" />
+    <Compile Include="Models\Class\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -307,7 +311,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>54132</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
