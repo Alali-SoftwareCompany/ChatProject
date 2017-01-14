@@ -14,6 +14,8 @@ namespace ChatProject.Models
 
         public int ToUserID { get; set; }
 
+        public int PrivateText { get; set; }
+
 
 
     }
