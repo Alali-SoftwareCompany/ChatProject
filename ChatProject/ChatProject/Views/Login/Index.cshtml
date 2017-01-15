@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Check";
+}
+
+<h2>Check</h2>
+<button id="xxx">Mačkej</button>
+<p>Hell yea :D</p>
+<p id="results"></p>
+@section scripts {
+    <script>
+        //document.getElementById("xxx")
+        $('#xxx').click(function () {
+            $.ajax({
+                url: '/api/Test',
+                type: 'post'
+            }).success(function (response) {
+                //console.log(response);
+
+                $('#results').append(
+                    $(htmlspecialchars($_GET['jmeno'])
+                ));
+            });
+        });
+    </script>
+}
+
+@*@section scripts {
+    <script>
+        
+        if (isset($_POST['jmeno'])) {
+            echo 'Vaše jméno: ' . htmlspecialchars($_GET['jmeno']);
+        } else {
+            echo 'Nebylo zadáno žádné jméno.';
+        }
+    </script>
+}*@
+<!--SHit help: http://php.baraja.cz/metody-odesilani-dat-->
